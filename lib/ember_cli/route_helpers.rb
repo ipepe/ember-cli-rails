@@ -3,7 +3,7 @@ require "ember_cli/html_constraint"
 module ActionDispatch
   module Routing
     class Mapper
-      def mount_ember_app(app_name, to:, **options)
+      def mount_ember_app(app_name, to: nil, **options)
         routing_options = options.deep_merge(
           defaults: { ember_app: app_name },
         )
