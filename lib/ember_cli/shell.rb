@@ -3,7 +3,7 @@ require "ember_cli/runner"
 
 module EmberCli
   class Shell
-    def initialize(paths:, env: {}, options: {})
+    def initialize(paths: nil, env: {}, options: {})
       @paths = paths
       @env = env
       @ember = Command.new(

@@ -2,7 +2,7 @@ require "ember_cli/helpers"
 
 module EmberCli
   class PathSet
-    def initialize(app:, rails_root:, ember_cli_root:, environment:)
+    def initialize(app: nil, rails_root: nil, ember_cli_root: nil, environment: nil)
       @app = app
       @rails_root = rails_root
       @environment = environment

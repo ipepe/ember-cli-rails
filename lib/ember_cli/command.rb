@@ -2,7 +2,7 @@ require "cocaine"
 
 module EmberCli
   class Command
-    def initialize(paths:, options: {})
+    def initialize(paths:nil, options: {})
       @paths = paths
       @options = options
     end

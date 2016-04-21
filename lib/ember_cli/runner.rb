@@ -2,7 +2,7 @@ require "open3"
 
 module EmberCli
   class Runner
-    def initialize(out:, err:, env: {}, options: {})
+    def initialize(out: nil, err: nil, env: {}, options: {})
       @env = env
       @output_streams = Array(out)
       @error_streams = Array(err)
@@ -36,7 +36,7 @@ module EmberCli
 
     private
 
-    def redirect_stream_in_thread(stream, write_to:)
+    def redirect_stream_in_thread(stream, write_to: nil)
       Thread.new do
         Thread.current.abort_on_exception = true
 

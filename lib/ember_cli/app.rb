@@ -55,7 +55,7 @@ module EmberCli
       end
     end
 
-    def index_html(head:, body:)
+    def index_html(head: nil, body: nil)
       html = HtmlPage::Renderer.new(
         head: head,
         body: body,

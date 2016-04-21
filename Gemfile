@@ -5,6 +5,7 @@ gemspec
 gem "appraisal"
 gem "rails", "4.2.4"
 gem "pry"
+gem "html_page", git: "https://github.com/ipepe/html_page.git"
 
 group :development, :test do
   gem "high_voltage", "~> 2.4.0"
