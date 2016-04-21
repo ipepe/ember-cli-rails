@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.0.0"
 
-  spec.add_dependency "ember-cli-rails-assets", "~> 0.6.2"
   spec.add_dependency "railties", ">= 3.2", "< 5"
   spec.add_dependency "cocaine", "~> 0.5.8"
 end
